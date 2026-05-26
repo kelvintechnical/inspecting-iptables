@@ -1,11 +1,11 @@
 # Lab: Inspecting iptables — Default Chains and Rules
 
-**Series:** linux-ops-mastery — RHCSA Firewall
-**Subjects covered:** Netfilter mental model, `iptables` vs `nft`, listing rules with `iptables -L`, numeric and verbose modes, line numbers, alternate tables (`nat`, `mangle`), correlating `iptables-save` output with what `firewalld` programs on the backend
-**Career arcs covered:** RHCSA (legacy wording still says “iptables”; you must recognize the chains), RHCE (Ansible `ansible.posix.firewalld` still maps to the same kernel rules), SRE (incident triage: “is traffic dropped in INPUT or FORWARD?”), DevOps (debugging kube-proxy / CNI rulesets), AI/MLOps (understanding host firewall when exposing model APIs)
-**Prerequisite:** Basic shell navigation; awareness that RHEL 9 defaults to `firewalld` with an `nftables` backend
-**Time Estimate:** 30 to 45 minutes
-**Difficulty arc:** Task 1 baseline services · 2–3 classic `iptables -L` reading skills · 4 other tables and save-format · 5 counters and line numbers edge cases · 6 capstone plus cleanup
+- **Series:** linux-ops-mastery — RHCSA Firewall
+- **Subjects covered:** Netfilter mental model, `iptables` vs `nft`, listing rules with `iptables -L`, numeric and verbose modes, line numbers, alternate tables (`nat`, `mangle`), correlating `iptables-save` output with what `firewalld` programs on the backend
+- **Career arcs covered:** RHCSA (legacy wording still says “iptables”; you must recognize the chains), RHCE (Ansible `ansible.posix.firewalld` still maps to the same kernel rules), SRE (incident triage: “is traffic dropped in INPUT or FORWARD?”), DevOps (debugging kube-proxy / CNI rulesets), AI/MLOps (understanding host firewall when exposing model APIs)
+- **Prerequisite:** Basic shell navigation; awareness that RHEL 9 defaults to `firewalld` with an `nftables` backend
+- **Time Estimate:** 30 to 45 minutes
+- **Difficulty arc:** Task 1 baseline services · 2–3 classic `iptables -L` reading skills · 4 other tables and save-format · 5 counters and line numbers edge cases · 6 capstone plus cleanup
 
 ---
 
